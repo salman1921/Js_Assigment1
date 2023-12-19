@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ 
+
+    <label for="filterDropdown">Search By:</label>
+    <select id="filterDropdown">
+        <option value="model">Model</option>
+        <option value="company">Company</option>
+        <option value="price">Price</option>
+        <option value="camera">Camera</option>
+        <!-- Add more options as needed -->
+    </select>
+
+    <input type="text" id="filterInput" placeholder="Enter your search value">
+    <button onclick="filterMobiles()">Search</button>
+
+    <ul id="mobileList">
+        <!-- Your list of mobile phones will be displayed here -->
+        <li data-model="Samsung" data-company="Samsung" data-price="50000" data-camera="12MP">Samsung Galaxy S10</li>
+        <li data-model="iPhone" data-company="Apple" data-price="70000" data-camera="12MP">iPhone 11</li>
+        <!-- Add more mobile phones as needed -->
+    </ul>
+
+ 
+    <script src="app.js"></script>
+
+
+
+</body>
+</html>
